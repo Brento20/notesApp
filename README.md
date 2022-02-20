@@ -1,5 +1,8 @@
 # 11 Express.js: Note Taker
 
+deployed on heroku @ https://cheeseandpotatos.herokuapp.com/
+github repo @ https://github.com/Brento20/notesApp
+
 ## Your Task
 
 Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
