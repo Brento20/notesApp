@@ -3,11 +3,11 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+var fs = require('fs');
 const path = require("path");
 const db = require("./db/db")
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 
 
@@ -28,7 +28,7 @@ app.route("/api/notes")
 
 
     .post(function (req, res) {
-        let jsonFilePath = path.join(__dirname, "../db/db.json");
+        let jsonFilePath = path.join(__dirname, "./db/db.json");
         let newNote = req.body;
 
 
